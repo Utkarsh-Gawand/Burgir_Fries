@@ -1,0 +1,31 @@
+{
+  "name": "burgir-fries",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "framer-motion": "11.3.24",
+    "next": "^14.2.35",
+    "next-auth": "4.24.7",
+    "prisma": "^5.19.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^3.10.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.40",
+    "tailwindcss": "3.4.7"
+  },
+  "allowScripts": {
+    "prisma@5.22.0": true,
+    "@prisma/client@5.22.0": true,
+    "@prisma/engines@5.22.0": true
+  }
+}

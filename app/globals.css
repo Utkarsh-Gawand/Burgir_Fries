@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme("colors.bg");
+  font-family: theme("fontFamily.body");
+}
+
+/* Burger placeholder shapes — plain CSS, not Tailwind utilities */
+@layer components {
+  .bun-top {
+    height: 42px;
+    border-radius: 110px 110px 12px 12px;
+    background: theme("colors.yellow.DEFAULT");
+  }
+  .lettuce {
+    height: 26px;
+    margin-top: -6px;
+    background: #7bae3f;
+    clip-path: polygon(
+      0 40%, 10% 10%, 20% 40%, 30% 5%, 40% 40%, 50% 10%,
+      60% 40%, 70% 5%, 80% 40%, 90% 10%, 100% 40%, 100% 100%, 0 100%
+    );
+  }
+  .cheese {
+    height: 26px;
+    margin-top: -4px;
+    background: theme("colors.yellow.dark");
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+  }
+  .patty {
+    height: 26px;
+    margin-top: -2px;
+    border-radius: 8px;
+    background: #5c3a21;
+  }
+  .bun-bottom {
+    height: 22px;
+    margin-top: -2px;
+    border-radius: 12px 12px 60px 60px;
+    background: theme("colors.yellow.dark");
+  }
+}
